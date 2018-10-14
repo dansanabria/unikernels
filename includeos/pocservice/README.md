@@ -1,4 +1,4 @@
-# Syslog IncludeOS Plugin Service POSIX sample service
+# POSIX sample service
 
 Echo service based on the Syslog IncludeOS Plugin Service seed. Echoes back a received string.
 
