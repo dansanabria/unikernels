@@ -1,0 +1,5 @@
+all:
+	$(CC) echovul.c -o echovul_linux
+
+clean:
+		rm -f echovul_linux
