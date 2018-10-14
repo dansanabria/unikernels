@@ -1,0 +1,13 @@
+set architecture i386:x86-64                                                                                                            │$rdx   : 0x1054              →  0x0000000000000000  →  0x0000000000000000
+                                                                                                                                        │$rsp   : 0x1ffa70            →  0x4141414141414141  →  0x4141414141414141
+break OS::start                                                                                                                         │$rbp   : 0x1ffac0            →  0x4141414141414141  →  0x4141414141414141
+break Service::start                                                                                                                    │$rsi   : 0x41                →  0x0000000000000041
+break main                                                                                                                              │$rdi   : 0xc9                →  0x00000000000000c9
+                                                                                                                                        │$rip   : 0x2011ec            →  0x666666001f647ce8  →  0x666666001f647ce8
+set step-mode on                                                                                                                        │$r8    : 0xc                 →  0x000000000000000c
+set non-stop off                                                                                                                        │$r9    : 0x100               →  0x0000000000000100
+target remote localhost:1234                                                                                                            │$r10   : 0xd                 →  0x000000000000000d
+                                                                                                                                        │$r11   : 0x10b               →  0x000000000000010b
+# To use the GDB_ENTRY macro, uncomment:                                                                                                │$r12   : 0x1ffaf4            →  0x4343434343434343  →  0x4343434343434343
+#set $eax=1                                                                                                                             │$r13   : 0x5                 →  0x0000000000000005
+source /home/vagrant/.gdbinit-gef.py
